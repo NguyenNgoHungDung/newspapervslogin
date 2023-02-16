@@ -1,3 +1,32 @@
+
+// .title{
+//     font-family: SFD-Bold;
+//     font-size: 20px;
+//     line-height: 26px;
+//     color: #333;
+//     text-decoration: none;
+//     margin-bottom: 10px;
+//     margin-top: -5px;
+//     transition: 0.5s;
+// }
+// .title:hover{
+//     color: red;
+//     transform: scale(1.05);
+//     transition: 0.5s;
+// }
+
+// .description{
+//     font-size: 13px;
+//     font-family: Arial;
+//     color: #4d4d4d;
+//     line-height: 18px;
+//     display: block;
+// }
+// .description:hover{
+//     transform: scale(1.05);
+//     transition: 0.5s;
+// }
+
 * {
     padding: 0;
     margin: 0;
@@ -77,11 +106,20 @@
     color: #f33c3c;
     font-size: 0.9rem;
     margin-top: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .blog-text .blog-title{
     font-size: 1.3rem;
     font-weight: 500;
     color: #272727;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .blog-text .blog-title:hover{
     color: #f33c3c;
@@ -106,21 +144,13 @@
     
   }
   
- 
-  .example-label {
-    display: table-cell;
-    font-size: 14px;
-    min-width: 120px;
-   
-  }
-  
-  .example-button-row {
-    display: table-cell;
-    max-width: 600px;
+  .order{
     margin-left: 80%;
+    background: yellow;
     border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
   }
+  
   
   

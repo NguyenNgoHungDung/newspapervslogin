@@ -12,7 +12,5 @@ export class CartComponent {
   constructor(public productCart: CartService){
     this.listCart = productCart.cart;
     console.log(this.listCart);
-
   }
-  
 }

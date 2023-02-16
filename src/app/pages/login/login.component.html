@@ -1,0 +1,62 @@
+<!-- 
+
+<form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="https://cdnimg.vietnamplus.vn/uploaded/bokttj/2023_01_02/avatar_the_way_of_water.jpg" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+     
+      
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form> -->
+
+<div class="container">
+  <header>Login Form</header>
+  <form>
+    <div class="input-field">
+      <input type="text" required>
+      <label>Email or Username</label>
+    </div>
+    <div class="input-field">
+      <input class="pswrd" type="password" required>
+      <span class="show">SHOW</span>
+      <label>Password</label>
+    </div>
+    <div class="button">
+      <div class="inner">
+      </div>
+      <button>LOGIN</button>
+    </div>
+  </form>
+  <div class="auth">
+    Or login with</div>
+  <div class="links">
+    <div class="facebook">
+      <i class="fab fa-facebook-square"><span>Facebook</span></i>
+    </div>
+    <div class="google">
+      <!-- <i class="fab fa-google-plus-square"><span>Google</span></i> -->
+      <button class="fab fa-google-plus-square" type="submit" *ngIf="!this.authService.currentUser"
+        (click)="login()">Google</button>
+    </div>
+  </div>
+  <div class="signup">
+    Not a member? <a href="#">Signup now</a>
+  </div>
+</div>
+<!-- <button type="button" class="cancelbtn" *ngIf="this.authService.currentUser" (click)="logout()">Logout</button> -->
+<!-- <button type="submit" *ngIf="!this.authService.currentUser" (click)="login()">Login gooogle</button> -->

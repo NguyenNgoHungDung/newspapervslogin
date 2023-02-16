@@ -10,7 +10,7 @@
     display: flex;
     line-height: 2rem;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:center;
     width: 100%;
   
   }
@@ -33,10 +33,10 @@
     color: red;
   }
   
-  .content-nav form {
-    position: relative;
-    margin-left: 600px;
-  }
+  // .content-nav form {
+  //   position: relative;
+  //   margin-left: 300px;
+  // }
   
   .content-nav form input {
     border: none;
@@ -64,8 +64,7 @@
     border: 1px solid transparent;
     border-radius: 10px;
     outline: none;
-    margin-left: 10px;
-    padding: 12px;
+    padding: 10px;
     cursor: pointer;
     
   }
@@ -74,3 +73,23 @@
     border-color: #fff;
   }
   
+  .login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+.avatar{
+  width: 50px;
+  height: 50px;
+}
+
+.logout-out{
+  margin-top: 0px;
+  transition: all .4s;
+
+
+}
+.logout-out:hover .logout-out{
+  left: 0;
+}

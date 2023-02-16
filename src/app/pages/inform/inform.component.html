@@ -1,0 +1,31 @@
+<!-- <div class="blog-container">
+<div *ngFor="let news of (news$|async)?.articles ??[]">
+    <div class="blog-box">{{news.title}}</div>
+    <div class="description">{{news.description}}</div>
+    <div class="url">{{news.url}}</div>
+    <div class="blog-img">{{news.urlToImage}}</div>
+    <div class="publish">{{news.publishedAt}}</div>
+    
+</div>
+</div> -->
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+
+<!-- blog container -->
+<div class="blog-container">
+    <!-- blog 1 -->
+    <div class="blog-box" *ngFor="let news of (news$|async)?.articles ??[]">
+      <div class="blog-img">
+        <!-- <div href="#" class="blog-img">{{news.urlToImage}}</div> -->
+        <img [src]="news.urlToImage" alt="Blog">
+      </div>
+      <div class="blog-text">
+        <!-- <div>{{post.id}}</div> -->
+        <a href="#" class="blog-title">{{news.title}}</a>
+        <span>{{news.url}}</span>
+        <p>
+            {{news.description}}
+        </p>
+        <div>{{news.publishedAt}}</div>
+    </div>
+</div>
+</div>

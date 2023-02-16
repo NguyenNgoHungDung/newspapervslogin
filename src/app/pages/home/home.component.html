@@ -16,7 +16,11 @@
         </p>
         <div>Số lượng còn lại: {{post.Status}}</div>
   
-        <a href="#"  class="order" (click)="this.cart.addCart(post)">Đặt Mua</a>
+        <!-- <button  class="order" (click)="this.cart.addCart(post)">Đặt Mua</button> -->
+        <div class="example-button-row">
+          <button mat-raised-button (click)="this.cart.addCart(post)">Đặt Mua</button>
+
       </div>
+     
     </div>
 </div>

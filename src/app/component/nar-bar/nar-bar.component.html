@@ -1,10 +1,10 @@
 <nav >
     <div class="content-nav">
       <ul style="list-style: none;">
-        <li><a href="#">Trang Chủ</a></li>
+        <li><a href="/home">Trang Chủ</a></li>
         <li><a href="#">Sản Phẩm</a></li>
         <li><a href="#">Liên Hệ</a></li>
-        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="/inform">Giới Thiệu</a></li>
       </ul>
   
       <form>
@@ -17,7 +17,22 @@
         <i class="fa fa-shopping-basket"></i>
         Giỏ Hàng
       </button>
+  
+    <div  *ngIf="this.authService.currentUser" class="login">
+      <img  class="avatar" [src]="authService.currentUser!.photoURL" alt="">
+      
+      <div  *ngIf="this.authService.currentUser" class="logout">
+        <p class="login-name"> {{authService.currentUser!.displayName}}</p> 
+        <button (click)="this.authService.logOut()" class="logout-out">Logout</button>
+      </div>
+      </div>
+      
     </div>
+   
+    
+    <!-- <div  *ngIf="this.authService.currentUser" class="logout">
+      <p class="login-name"> {{authService.currentUser.}}</p>
+   </div>  -->
   </nav>
   
   

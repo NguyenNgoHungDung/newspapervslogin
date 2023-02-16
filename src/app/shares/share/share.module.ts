@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 @NgModule({
   declarations: [],
   imports: [
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router';
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
+    MatProgressBarModule,
   ]
 })
 export class ShareModule { }
