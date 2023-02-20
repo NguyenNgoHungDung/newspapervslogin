@@ -3,6 +3,8 @@ import {createEffect, ofType } from "@ngrx/effects";
 import {Actions} from "@ngrx/effects";
 import {map, switchMap, catchError, of} from "rxjs";
 import { News }  from 'src/app/models/news.model';
+import { NewsService } from "src/app/services/news.service";
+import * as NewsActions from 'src/actions/news.action';
 
 @Injectable()
 export class NewsEffect{

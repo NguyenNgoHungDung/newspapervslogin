@@ -30,7 +30,10 @@ import { StoreModule } from '@ngrx/store';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     EffectsModule.forRoot([]),
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot({
+      NewsEffect,
+      ArticleEffect,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { createReducer, on } from "@ngrx/store";
-import {ArticleState} from ""
+import {ArticleState} from "src/states/article.state";
 import * as ArticleActions from 'src/actions/article.action';
 
 const initialState: ArticleState={
