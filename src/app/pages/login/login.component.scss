@@ -177,7 +177,7 @@ form .button{
   color: white;
   font-size: 20px;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  
 }
 .container .auth{
   margin: 35px 0 20px 0;
@@ -205,12 +205,13 @@ form .button{
 .facebook i, .facebook span{
   color: #4267B2;
 }
-.google i, .google button{
+.google i, .google span{
   color: #dd4b39;
   border: 0px;
-  font-size: 20px;
-  margin-top: 7px;
-}
+  // font-size: 20px;
+  // margin-top: 8px;
+  
+} 
 .links i{
   font-size: 23px;
   line-height: 40px;
@@ -234,3 +235,6 @@ form .button{
 .signup a:hover{
   text-decoration: underline;
 }
+
+
+

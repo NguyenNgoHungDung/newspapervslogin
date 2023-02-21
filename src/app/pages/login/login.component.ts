@@ -22,8 +22,5 @@ export class LoginComponent {
 
   }
 
-  
-
-  
-
 }
+export class ButtonOverviewExample {}

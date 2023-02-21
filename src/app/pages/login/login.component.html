@@ -50,8 +50,7 @@
     </div>
     <div class="google">
       <!-- <i class="fab fa-google-plus-square"><span>Google</span></i> -->
-      <button class="fab fa-google-plus-square" type="submit" *ngIf="!this.authService.currentUser"
-        (click)="login()">Google</button>
+      <i class="fab fa-google-plus-square" *ngIf="!this.authService.currentUser"(click)="login()"><span>Google</span></i>
     </div>
   </div>
   <div class="signup">
